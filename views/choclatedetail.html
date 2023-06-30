@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choclate detail</title>
+    <link rel="stylesheet" href="./choclate.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="/choclate_details/add-details" method="post" onsubmit="saveDetails(event)">
+               <div>
+                    <label>ItemName</label><br>
+                    <input type="text" name="itemname" id="itemid">
+               </div>
+                <div>
+                    <label>Description</label><br>
+                    <input type="text" name="description" id="descid">
+                </div>
+                <div>
+                    <label>Price</label><br>
+                    <input type="number" name="price" id="priceid">
+                </div>
+                  <div>
+                    <label>Quantity</label><br>
+                    <input type="number" name="quantity" id="quantityid">
+                  </div>
+                <button type="submit">AddItem</button>
+            </form>
+        </div>
+
+        <div class="allItems">
+            <ul id="listofitem">
+            </ul>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="./choclate.js"></script>
+</body>
+</html>
